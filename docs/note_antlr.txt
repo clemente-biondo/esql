@@ -1,0 +1,35 @@
+What is ANTLR?
+ANTLR is a parser generator, a tool that helps you to create parsers. A parser takes a piece of text and transforms it in an organized structure, such as an Abstract Syntax Tree (AST).
+What you need to do to get an AST:
+1. define a lexer and parser grammar
+2. invoke ANTLR: it will generate a lexer and a parser in your target language (e.g., Java, Python, C#, Javascript)
+3. use the generated lexer and parser: you invoke them passing the code to recognize and they return to you an AST
+
+Before looking into parsers, we need to first look into lexers, also known as tokenizers. 
+A lexer takes the individual characters and transforms them in tokens, the atoms that the parser uses to create the logical structure.
+Lexer rules are all uppercase, while parser rules are all lowercase. Technically the rule about case applies only to the first character of their names, but usually they are all uppercase or lowercase for clarity.
+Rules are typically written in this order: first the parser rules and then the lexer ones, although logically they are applied in the opposite order. It’s also important to remember that lexer rules are analyzed in the order that they appear, and they can be ambiguous.
+The basic syntax of a rule is easy: there is a name, a colon, the definition of the rule and a terminating semicolon.
+
+fragments
+
+Both the listener and the visitor use depth-first search.
+
+Looking at the first line you could notice a difference: we are defining a lexer grammar, instead of the usual (combined) grammar.
+You simply can’t define a lexical mode together with a parser grammar. You can use lexical modes only in a lexer grammar, not in a combined grammar
+
+$ alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+$ alias grun='java org.antlr.v4.gui.TestRig'
+
+Riferimenti
+https://github.com/antlr/antlr4/blob/master/doc/getting-started.md
+https://tomassetti.me/antlr-mega-tutorial/
+
+
+antlr4 -visitor <grammar-file-g4>
+
+
+devo dirgli di fare lo skip di commenti (forse non di whitespaces)
+
+------------------------------------------------------
+SET CLASSPATH=.;D:\20170715_eclipse_workspace\antlr\antlr-4.7.1-complete.jar;%CLASSPATH%

@@ -1,0 +1,1 @@
+https://blogs.oracle.com/sql/optional-search-parameters:-getting-rid-of-those-pesky-or-conditions

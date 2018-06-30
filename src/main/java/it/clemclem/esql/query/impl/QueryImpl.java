@@ -1,6 +1,7 @@
 package it.clemclem.esql.query.impl;
 
 import it.clemclem.esql.query.Query;
+import it.clemclem.esql.query.QueryId;
 
 public class QueryImpl implements Query {
   private final String queryContent;

@@ -5,8 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 import it.clemclem.esql.query.Query;
+import it.clemclem.esql.query.QueryId;
 import it.clemclem.esql.query.QueryProvider;
-import it.clemclem.esql.query.impl.QueryId;
 import it.clemclem.esql.query.impl.QueryImpl;
 
 public class QueryProviderFileImpl implements QueryProvider{

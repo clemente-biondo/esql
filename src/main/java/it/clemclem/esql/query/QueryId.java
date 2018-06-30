@@ -1,4 +1,4 @@
-package it.clemclem.esql.query.impl;
+package it.clemclem.esql.query;
 
 import java.io.Serializable;
 

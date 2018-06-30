@@ -1,4 +1,4 @@
-package it.clemclem.esql.query;
+package it.clemclem.esql.query.service;
 
 import java.sql.ResultSet;
 

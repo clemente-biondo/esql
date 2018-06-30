@@ -1,6 +1,8 @@
-package it.clemclem.esql.query;
+package it.clemclem.esql.query.service;
 
 import java.util.List;
+
+import it.clemclem.esql.query.Query;
 
 public interface QueryExecutor {
   

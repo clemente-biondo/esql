@@ -2,15 +2,18 @@ package it.clemclem.esql.query.impl;
 
 import it.clemclem.esql.query.Query;
 import it.clemclem.esql.query.QueryId;
+import it.clemclem.esql.query.QueryMetadata;
 
 public class QueryImpl implements Query {
   private final String queryContent;
   private final QueryId id;
-
-  public QueryImpl(QueryId id,String queryContent) {
+  private final QueryMetadata metadata;
+  
+  public QueryImpl(QueryId id,QueryMetadata metadata,String queryContent) {
     super();
     this.queryContent = queryContent;
     this.id = id;
+    this.metadata=metadata;
   }
 
   public String getQueryContent() {

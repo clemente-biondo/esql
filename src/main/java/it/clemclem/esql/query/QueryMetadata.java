@@ -9,5 +9,9 @@ public class QueryMetadata {
     super();
     this.charset = charset;
   }
+
+  public Charset getCharset() {
+    return charset;
+  }
   
 }
